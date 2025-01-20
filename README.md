@@ -2,7 +2,7 @@
 
 ## For Windows Users
 1. **Clone the Repository** :
-   - git clone https://github.com/vinscentN/drone_assessment.git
+   - git clone https://github.com/578025tumi/Drone_assesment.git
    - Clone the repository using the provided URL.
 
 2. **Navigate to Project Directory**: 
