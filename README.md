@@ -53,9 +53,9 @@
 ` http://localhost:8000/api/v1/drones/register`
 ```json
 {
-  "serial_number": "DRN001",
+  "serial_No": "DRN001",
   "model": "Lightweight",
-  "weight_limit": 500,
+  "weight_lmt": 500,
   "battery_capacity": 90,
   "state": "IDLE"
 }
@@ -78,7 +78,7 @@
 `http://localhost:8000/api/v1/drones/load`
 ````json
 {
-   "serial_number": "DRN001",
+   "serial_No": "DRN001",
    "medications": [1,2,3,4]
 }
 ````
