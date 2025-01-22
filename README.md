@@ -7,7 +7,7 @@
 
 2. **Navigate to Project Directory**: 
    - Using Command Prompt or PowerShell, navigate to the directory where the repository has been cloned.
-   - `cd drone_assessment`
+   - `cd Drone_assessment`
 
 3. **Create and Activate Virtual Environment**:
    - Create a virtual environment by running `python -m venv venv_name` in the project directory.
@@ -53,7 +53,7 @@
 ` http://localhost:8000/api/v1/drones/register`
 ```json
 {
-  "serial_number": "DRN1234",
+  "serial_number": "DRN001",
   "model": "Lightweight",
   "weight_limit": 500,
   "battery_capacity": 90,
@@ -66,7 +66,7 @@
 ` http://localhost:8000/api/v1/add/medication`
 ````json
 {
-  "name": "Medication AZF",
+  "name": "MedAZF",
   "weight": 100,
   "code": "MED001",
   "image": "medication_a.jpg"
@@ -78,14 +78,14 @@
 `http://localhost:8000/api/v1/drones/load`
 ````json
 {
-   "serial_number": "DRN1234",
+   "serial_number": "DRN001",
    "medications": [1,2,3,4]
 }
 ````
 
 ### Checking loaded medication items for a given drone
 `Method: GET`
-````http://localhost:8000/api/v1/drones/loaded/DRN1234````
+````http://localhost:8000/api/v1/drones/loaded/DRN001````
 
 ### Checking available drones for loading
 `Method: GET`
@@ -94,5 +94,5 @@
 
 ### Check drone battery level for a given drone
 `Method: GET`
-````http://localhost:8000/api/v1/drones/battery/DRN1234````
+````http://localhost:8000/api/v1/drones/battery/DRN001````
 
